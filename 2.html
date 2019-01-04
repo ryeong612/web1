@@ -3,30 +3,63 @@
 <head>
   <title>WEB1 - css</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;}
+
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left:33px;
+      }
+      #grid #article{
+        padding-left:25px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+        ol{
+          border-right:none;
+        }
+        h1 {
+    border-bottom:none;
+        }
+
+      }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
   <ol>
     <li><a href="1.html">HTML </a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
   </ol>
-
+  <div id="article">
   <h2>CSS</h2>
-  <h3>진명이의 똥냄시는 엄청나</h3>
-  <h4>진명이 프렌즈 레이싱 똥카</h4>
-
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5c2db1af7a79fc1bddf3100c/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <h3>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</h3>
+  </div>
+</div>
   </body>
+</html>
